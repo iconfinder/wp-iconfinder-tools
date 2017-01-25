@@ -26,5 +26,10 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
+require_once( './settings.php' );
 require_once( './inc/class-icf-utils.php' );
 require_once( './inc/class-icf-api.php' );
+
+if ( ! defined( 'ICF_TOOLS' )) {
+    define( 'ICF_TOOLS', 1 );
+}

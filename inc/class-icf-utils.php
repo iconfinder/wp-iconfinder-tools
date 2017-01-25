@@ -67,14 +67,14 @@ class ICF_Utils {
     }
 
     /**
-     * This is an alias for Utils::dump()
+     * This is an alias for ICF_Utils::dump()
      * @param array|object  $what   The object|array to be printed
      * @param bool          $die    Whether or not to die after printing the object
      * @return string
      */
     public static function debug($what, $die=true) {
 
-        return Utils::dump( $what, $die );
+        return self::dump( $what, $die );
     }
 
     /**
@@ -268,7 +268,7 @@ class ICF_Utils {
                 }
             }
             catch(Exceptoin $e) {
-                Utils::debug( $e );
+                self::debug( $e );
             }
             if (isset($iconsets['items'])) {
                 $ids = array();
